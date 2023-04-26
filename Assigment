@@ -1,0 +1,26 @@
+
+# Linear Regression Assignment
+
+#Aachal Mandloi 0827CI201001
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+# Creating a sample dataset
+
+data = pd.DataFrame({
+    'YearsExperience': [1.1, 1.3, 1.5, 2.0, 2.2, 2.9, 3.0, 3.2, 3.2, 3.7, 3.9, 4.0, 4.0, 4.1, 4.5, 4.9, 5.1, 5.3, 5.9, 6.0, 6.8, 7.1, 7.9, 8.2, 8.7, 9.0, 9.5, 9.6, 10.3, 10.5],
+    'Salary': [39343, 46205, 37731, 43525, 39891, 56642, 60150, 54445, 64445, 57189, 63218, 55794, 56957, 57081, 61111, 67938, 66029, 83088, 81363, 93940, 91738, 101302, 113812, 109431, 105582, 116969, 112635, 122391, 121872, 127345]
+})
+
+
+
+# Creating a scatter plot of the data
+
+plt.scatter(data['YearsExperience'], data['Salary'])
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+print('Aachal Mandloi 0827CI201001')
+plt.show()
+
