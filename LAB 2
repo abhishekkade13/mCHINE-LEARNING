@@ -1,0 +1,38 @@
+#program by importing pyhton library
+
+#using numpy 
+import numpy as np
+arr=np.random.rand(4,4)
+print(arr)
+print("******")
+print(arr[0:3,1:2])
+
+*********************************
+
+#using matplotlib
+
+import matplotlib.pyplot as plt
+x=[2,8,9,10]
+y=[11,16,23,34]
+
+x2=[3,9,11,14]
+y2=[6,15,7,17]
+
+plt.bar(x,y,align='center')
+plt.bar(x2,y2,color='red')
+plt.title('Bar Graph')
+plt.ylabel('y-axis')
+plt.xlabel('x-axis')
+plt.show()
+
+********************************
+
+#using wordcloud
+
+from wordcloud import WordCloud
+wc = WordCloud(width=500,height=500,min_font_size=10,background_color='white')
+spam_wc = wc.generate("hii i am the best player in the world ")
+plt.figure(figsize=(15,6))
+plt.imshow(spam_wc)
+
+************************************
